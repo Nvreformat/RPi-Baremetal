@@ -5,7 +5,7 @@ uint32_t Random()
 	static uint32_t NextSeed;
 	
 	NextSeed = NextSeed * 1103515245 + 12345;
-    return (uint32_t)(NextSeed / 65536) % 32768;
+	return (uint32_t)(NextSeed / 65536) % 32768;
 }
 
 int64_t ABS(int64_t Number)
@@ -22,5 +22,5 @@ int64_t ABS(int64_t Number)
 
 int SGN(int x)
 {
-    return ((unsigned)-x >> 31) - ((unsigned)x >> 31);
+	return ((unsigned)-x >> 31) - ((unsigned)x >> 31);
 }

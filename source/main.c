@@ -13,7 +13,7 @@ extern void SetLedState();
 
 void KernelMain()
 {
-    SetupMemory();
+	SetupMemory();
 	
 	while(1)
 	{	
